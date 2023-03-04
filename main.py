@@ -177,7 +177,6 @@ def converse(start_message):
     while True:
         # Prompt the user for the next message
         user_message = listen()
-        print("\n")
 
         # Add the user message to the list of messages
         messages.append({"role": "user", "content": user_message})
