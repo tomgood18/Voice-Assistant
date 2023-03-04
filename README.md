@@ -1,5 +1,5 @@
 # Voice Assistant
-Voice Assistant is a simple Python application that uses the Google Cloud Text-to-Speech API and the OpenAI GPT-3 API to speak and generate text, respectively.
+This project is a Python-based voice assistant that leverages the power of OpenAI's new GPT-3.5-Turbo model. The voice assistant can perform a wide range of tasks, from answering questions and providing information to playing music and setting reminders. Users can interact with the assistant using natural language, and the assistant will respond with spoken answers as well as printed text.
 
 ## Prerequisites
 Before running the application, you will need to provide the following credentials:
