@@ -15,6 +15,8 @@ from time import sleep
 
 import threading
 
+from dotenv import load_dotenv
+
 # Hide pygame welcome message
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
 import pygame
@@ -22,13 +24,14 @@ import pygame
 # Initialize the recognizer
 r = sr.Recognizer()
 
-
-
-
 console = Console()
 
-# api_key = os.environ['OPENAI_API_KEY']
-api_key = "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"
+extDataDir = os.getcwd()
+if getattr(sys, 'frozen', False):
+    extDataDir = sys._MEIPASS
+load_dotenv(dotenv_path=os.path.join(extDataDir, '.env'))
+
+api_key = os.environ['OPENAI_API_KEY']
 
 def resource_path(relative_path):
     try:
